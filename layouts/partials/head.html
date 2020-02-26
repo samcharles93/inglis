@@ -1,0 +1,41 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {{ template "_internal/google_analytics_async.html" . }}
+    <meta name="keyword" content="{{ .Site.Params.keyword }}">
+    <link rel="shortcut icon" href="{{ "images/favicon.ico" | relURL }}">
+    <link rel="canonical" href="{{ .URL | relURL }}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/bootstrap.css" | relURL }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
+        integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz" crossorigin="anonymous">
+
+    <!--  Custom CSS  -->
+    {{ range .Site.Params.custom_css -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+    {{- end }}
+
+    <!-- Plugins -->
+
+    {{ "<!-- JS Plugins -->" | safeHTML }}
+    {{ range .Site.Params.plugins.js}}
+    <script src="{{ .link | absURL }}"></script>
+    {{ end }}
+
+    <script src="js/boostrap.js"></script>
+    <script src="js/jquery.easing.compatibility.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- Custom JS -->
+    {{ range .Site.Params.custom_js }}
+    <script src="{{ . | absURL }}"></script>
+    {{ end }}
+
+    <title>{{ .Site.Title }}</title>
+</head>

@@ -1,0 +1,108 @@
+header {
+  padding: 156px 0 100px;
+}
+
+body {
+  font-family: "OpenSans" !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "OpenSans" !important;
+}
+
+p {
+  font-family: "OpenSans" !important;
+}
+
+section {
+  padding: 150px 0;
+}
+
+#page-heading div {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  color: white;
+  text-shadow: 0px 2px 2px black;
+}
+
+#page-heading h1 {
+  font-weight: 300;
+  text-shadow: 0px 2px 2px black;
+  color: white;
+}
+
+.custom-background {
+  background-image: url("/images/background.jpg");
+  background-color: #7D7D7D;
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.services-text-header {
+  text-decoration: overline;
+}
+
+#services {
+  border-radius: 50px;
+  border-color: #9D9D9D;
+  background-color: #F2F2F2;
+}
+
+#contact {
+  border-radius: 50px;
+  border-color: #9D9D9D;
+  background-color: #F2F2F2;
+}
+
+#post-card {
+  padding: 5% 5% 5% 5%;
+  border-radius: 50px;
+  border-color: #9D9D9D;
+  background-color: #F2F2F2;
+}
+
+.top-nav-list li{
+  display: inline;
+  text-align: center;
+}
+
+.top-nav-link {
+  text-align: center;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  color: white;
+} 
+
+.top-nav-link-a:hover {color: #7D7D7D;}
+
+#success {
+  width: fit-content;
+  height: auto;
+}
+
+.txt-footer {
+  color: #919496
+}
+
+.txt-footer:hover {
+  color: #ececed;
+}
+
+.footer-color {
+  background-color: #2d2d2d;
+  color: #2d2d2d;
+}
+
+.contact-image {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+

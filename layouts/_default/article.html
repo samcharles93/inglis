@@ -1,0 +1,14 @@
+<article class="card col-lg-4 col-md-6 col-12 m-2" data-wow-duration="500ms">
+    <div class="post-block">
+        <div class="media-wrapper">
+            <img class="img-fluid lozad" data-src="{{ .Params.Image_webp | absURL }}"
+                onerror="this.onerror=null;this.src='{{ .Params.Image | absURL }}'">
+        </div>
+
+        <div class="content">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p>{{ .Summary }}</p>
+            <a class="btn btn-link" href="{{ .Permalink }}">{{ "read more." }}</a>
+        </div>
+    </div>
+</article>

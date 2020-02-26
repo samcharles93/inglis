@@ -1,0 +1,19 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Inglis Support Service"
+description = ""
+disableKinds = ["taxonomy", "taxonomyTerm"]
+googleAnalytics = "UA-123-45"
+paginate = 3
+custom_css = ""
+custom_js = ""
+
+[[menu.main]]
+name = "Home"
+URL = ""
+weight = 1
+
+[[menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 2
