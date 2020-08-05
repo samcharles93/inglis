@@ -67,7 +67,7 @@
     <hr>
     <div class="row">
         <div class="col-lg-12">
-            <form name="contact" method="POST" data-netlify="true" id="contactForm">
+            <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" id="contactForm">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -90,6 +90,7 @@
                                 data-validation-required-message="Please enter a message."></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
+                        <div data-netlify-recaptcha="true"></div>
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
                             <button class="btn btn-primary btn-lg text-uppercase" type="submit">Send
